@@ -3,9 +3,9 @@ import './Form.css'
 import {useTelegram} from "../../hooks/useTelegram";
 
 const Form = () => {
-    const [country, setCountry] = useState('');
-    const [street, setStreet] = useState('');
-    const [subject, setSubject] = useState('physical');
+    const [country, setCountry] = useState();
+    const [street, setStreet] = useState();
+    const [subject, setSubject] = useState();
     const {tg} = useTelegram();
 
 
@@ -28,7 +28,7 @@ const Form = () => {
     }
 
     const onChangeStreet = () => {
-        setCountry(e.target.value)
+        setStreet(e.target.value)
     }
 
     const onChangeSubject = () => {
