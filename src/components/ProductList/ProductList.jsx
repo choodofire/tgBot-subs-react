@@ -17,7 +17,7 @@ const products = [
         description: '3 месяца'},
     {id: '3', title: 'Spotify', price: 229,
         img: spotifyLogo,
-        description: '6 месяц'},
+        description: '6 месяцев'},
     {id: '4', title: 'Spotify', price: 199,
         img: spotifyLogo,
         description: '12 месяцев'},
