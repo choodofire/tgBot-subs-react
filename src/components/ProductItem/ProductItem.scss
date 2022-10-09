@@ -6,13 +6,15 @@
     width: 170px;
 }
 
-
 .img {
     width: 100%;
     background: lightgray;
-    height: 100px;
-    margin: 0 auto;
+    height: 110px;
+    margin: 0 auto 10px;
     background: var(--tg-theme-button-color);
+    img{
+        width: 140px;
+    }
 }
 
 .description {
@@ -24,8 +26,6 @@
 }
 
 h2 {
-    span {
-        background-color: red;
-    }
+        text-align: center;
 }
 

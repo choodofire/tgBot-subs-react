@@ -56,20 +56,21 @@ const Form = () => {
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Страна'}
+                placeholder={'Электронная почта/Имя пользователя'}
                 value={country}
                 onChange={onChangeCountry}
             />
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Улица'}
+                placeholder={'Пароль'}
                 value={street}
                 onChange={onChangeStreet}
             />
             <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Физ. лицо</option>
-                <option value={'legal'}>Юр. лицо</option>
+                <option value={'spotify'}>Spotify</option>
+                <option value={'netflix'}>Netflix</option>
+                <option value={'youtube'}>YouTube</option>
             </select>
         </div>
     );

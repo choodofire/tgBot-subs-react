@@ -3,13 +3,24 @@ import './ProductList.scss';
 import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
+import spotifyLogo from '../../img/spotify-logo.png';
+import netflixLogo from '../../img/netflix-logo.png';
+import youtubeLogo from '../../img/youtube-logo.png';
 
 const products = [
-    {id: '1', title: 'Spotify', price: "от 199р/мес", description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Netflix', price: "от 799р/мес", description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Youtube', price: "от 169р/мес", description: 'Синего цвета, прямые'},
-    {id: '4', title: 'VPN', price: "от 199р/мес", description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'iTunes', price: "от 219р/мес", description: 'Синего цвета, прямые'},
+    // {id: '1', title: 'Spotify', price: 299,
+    //     img: spotifyLogo,
+    //     description: '1 месяц'},
+    {id: '2', title: 'Netflix', price: 799,
+        img: netflixLogo,
+        description: '1 месяц'},
+    {id: '3', title: 'Youtube', price: 229,
+        img: youtubeLogo,
+        description: '1 месяц'},
+
+
+    // {id: '4', title: 'VPN', price: "от 199р/мес", description: 'Зеленого цвета, теплая'},
+    // {id: '5', title: 'iTunes', price: "от 219р/мес", description: 'Синего цвета, прямые'},
 ]
 
 const getTotalPrice = (items = []) => {
