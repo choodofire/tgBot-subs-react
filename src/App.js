@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
