@@ -5,14 +5,14 @@ import {useTelegram} from "../../hooks/useTelegram";
 const Form = () => {
     const [userMail, setUserMail] = useState('');
     const [userPassword, setUserPassword] = useState('');
-    const [subject, setSubject] = useState('physical');
+    const [subject, setSubject] = useState('spotify');
     const {tg} = useTelegram();
 
     const onSendData = useCallback(() => {
         const data = {
             userMail,
             userPassword,
-            subject
+            subject,
         }
         tg.sendData(JSON.stringify(data));
     }, [userMail, userPassword, subject])
